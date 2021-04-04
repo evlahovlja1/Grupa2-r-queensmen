@@ -1,0 +1,176 @@
+* {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: cursive !important;
+}
+
+body {
+	font-family: cursive;
+	background: url("plavi.jpg") no-repeat center center fixed; 
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#mainPage {
+  display: grid;
+  
+  grid-template-columns: 50% 40%;
+  grid-template-areas: "citatDana ." "danas kalendar" "kakavSi .";
+  grid-gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#mainPage > * {
+  border-radius: 30px;
+}
+
+div > h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#profilnaSlika {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#navbarTop {
+  display: inline-block;
+}
+
+#postavkeSlika {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fff; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+}
+
+.sidenav #postavkeDugme {
+  position: relative;
+  top: 68vh;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #999;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#citatDana > h2 {
+  text-align: center;
+}
+
+#citatDana {
+  grid-area: citatDana;
+  background-color: white;
+  height: 100%;
+  padding: 5px 10px 5px 10px;
+}
+
+#danas {
+  grid-area: danas;
+  background-color: white;
+  height: 100%;
+  font-size: 26px;
+  position: relative;
+}
+
+#plusSlika {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  left: 45%;
+}
+
+#danas > ul {
+  padding-left: 50px;
+}
+
+#danas > h2 {
+  font-size: 45px;
+}
+
+#kakavSi {
+  grid-area: kakavSi;
+  background-color: white;
+  height: 100%;
+}
+
+.calendar {
+  grid-area: kalendar;
+}
+
+#ocjenaDana {
+  margin-top: 20px;
+  margin: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  height: 70px;
+  width: 10px;
+  max-width: 150px;
+  flex-grow: 1;
+  border-radius: 50%;
+  border-color: black;
+  font-size: 20px;
+  border-width: 10px;
+  background-color: white;
+}
+
+/*
+
+#dobar {
+  background-color: green;
+  flex-grow: 2;
+}
+
+#onako {
+  background-color: yellow;
+}
+
+#lose {
+  background-color: red;
+}
+*/
