@@ -11,6 +11,7 @@ namespace LifePlanner.Controllers
 {
     public class HomeController : Controller
     {
+        //testirung
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
